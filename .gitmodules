@@ -1,0 +1,18 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/ebinishere/app.git
+[submodule "app_core_test"]
+	path = app_core_test
+	url = https://github.com/ebinishere/app_core_test.git
+[submodule "srv"]
+	path = srv
+	url = https://github.com/ebinishere/srv.git
+[submodule "math"]
+	path = math
+	url = https://github.com/ebinishere/math.git
+[submodule "cogeo"]
+	path = cogeo
+	url = https://github.com/ebinishere/cogeo.git
+[submodule "sp"]
+	path = sp
+	url = https://github.com/ebinishere/sp.git
