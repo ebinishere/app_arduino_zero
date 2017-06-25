@@ -38,6 +38,7 @@
 /*----------------------------------------------------------------------------
  *      RTX User configuration part BEGIN
  *---------------------------------------------------------------------------*/
+ #include "../../src/task.h"
  
 //-------- <<< Use Configuration Wizard in Context Menu >>> -----------------
 //
@@ -226,6 +227,7 @@ void os_idle_demon (void) {
  
   for (;;) {
     /* HERE: include optional user code to be executed when no thread runs.*/
+		thread_bg();
   }
 }
  

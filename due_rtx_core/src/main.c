@@ -59,15 +59,15 @@ int main (void)
 		//	Release code here
 	#endif
 
-//	preKernelInit();
+	preKernelInit();
 
 	osKernelInitialize();
 	
 	/* tasks/threads initialized here */
-    osThreadCreate (osThread(thread_x),       NULL);    
-//	thread_init();
+//    osThreadCreate (osThread(thread_x),       NULL);    
+	thread_init();
 
-//	postKernelInit();
+	postKernelInit();
 
 	/* Start OS */
 	osKernelStart();

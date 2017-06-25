@@ -57,19 +57,19 @@ void thread_init(void)
     #endif
 
     threadID_10x      = osThreadCreate (osThread(thread_10x),       NULL);    
-//    threadID_20x      = osThreadCreate (osThread(thread_20x),       NULL);    
-//    threadID_50x      = osThreadCreate (osThread(thread_50x),       NULL);    
-//    threadID_100x     = osThreadCreate (osThread(thread_100x),      NULL);    
-//    threadID_200x     = osThreadCreate (osThread(thread_200x),      NULL);
-//    threadID_500x     = osThreadCreate (osThread(thread_500x),      NULL);
+    threadID_20x      = osThreadCreate (osThread(thread_20x),       NULL);    
+    threadID_50x      = osThreadCreate (osThread(thread_50x),       NULL);    
+    threadID_100x     = osThreadCreate (osThread(thread_100x),      NULL);    
+    threadID_200x     = osThreadCreate (osThread(thread_200x),      NULL);
+    threadID_500x     = osThreadCreate (osThread(thread_500x),      NULL);
     threadID_1000x    = osThreadCreate (osThread(thread_1000x),     NULL);
 
     threadinit_fail     = ( (NULL == threadID_10x)  ||
-//                            (NULL == threadID_20x)  ||
-//                            (NULL == threadID_50x)  ||
-//                            (NULL == threadID_100x) ||
-//                            (NULL == threadID_200x) ||
-//                            (NULL == threadID_500x) || 
+                            (NULL == threadID_20x)  ||
+                            (NULL == threadID_50x)  ||
+                            (NULL == threadID_100x) ||
+                            (NULL == threadID_200x) ||
+                            (NULL == threadID_500x) || 
                             (NULL == threadID_1000x) ); 
 
     /* Stay here for thread fail */
