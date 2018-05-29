@@ -64,7 +64,7 @@ int main (void)
 	osKernelInitialize();
 	
 	/* tasks/threads initialized here */
-//    osThreadCreate (osThread(thread_x),       NULL);    
+  //    osThreadCreate (osThread(thread_x),       NULL);    
 	thread_init();
 
 	postKernelInit();

@@ -1,5 +1,5 @@
 /*************************************************************************************************
- * thread.c -- Module routines
+ * task.c -- Module routines
  *
  * Author: Ebin Baby
  *
@@ -92,7 +92,7 @@ void postKernelInit(void)
     
 }
 
-void thread_10x(void)
+void thread_10x(void const *argument)
 {
     uint16_t dT = 10;  // 10 x
     
@@ -110,7 +110,7 @@ void thread_10x(void)
     }
 }
 
-void thread_20x(void)
+void thread_20x(void const *argument)
 {
     uint16_t dT = 20;  // 20 x
     
@@ -129,7 +129,7 @@ void thread_20x(void)
 }
 
 
-void thread_50x(void)
+void thread_50x(void const *argument)
 {
     uint16_t dT = 50;  // 50 x
     
@@ -148,7 +148,7 @@ void thread_50x(void)
 }
 
 
-void thread_100x(void)
+void thread_100x(void const *argument)
 {
     uint16_t dT = 100;  // 100 x
     
@@ -166,7 +166,7 @@ void thread_100x(void)
     }
 }
 
-void thread_200x(void)
+void thread_200x(void const *argument)
 {
     uint16_t dT = 200;  // 200 x
 
@@ -185,7 +185,7 @@ void thread_200x(void)
     }
 }
 
-void thread_500x(void)
+void thread_500x(void const *argument)
 {
     uint16_t dT = 500;  // 500 x
 
@@ -204,7 +204,7 @@ void thread_500x(void)
     }
 }
 
-void thread_1000x(void)
+void thread_1000x(void const *argument)
 {
     uint16_t dT = 1000;  // 1000 x
 

@@ -30,13 +30,13 @@ void postKernelInit(void);
 void thread_init(void);			/* Not a thread */
 void thread_bg(void);				/* Not a thread */	
 
-void thread_10x(void);
-void thread_20x(void);
-void thread_50x(void);
-void thread_100x(void);
-void thread_200x(void);
-void thread_500x(void);
-void thread_1000x(void);
+void thread_10x(void const 		*argument);
+void thread_20x(void const 		*argument);
+void thread_50x(void const 		*argument);
+void thread_100x(void const 	*argument);
+void thread_200x(void const 	*argument);
+void thread_500x(void const 	*argument);
+void thread_1000x(void const 	*argument);
 
 
 
